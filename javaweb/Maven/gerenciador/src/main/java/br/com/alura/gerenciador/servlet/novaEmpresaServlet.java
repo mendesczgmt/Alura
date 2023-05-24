@@ -23,6 +23,7 @@ public class novaEmpresaServlet extends HttpServlet {
 		String nomeEmpresa = request.getParameter("nome");
 		String paramDataEmpresa = request.getParameter("data");
 		
+		
 		Date dataAbertura = null;
 		try {
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -38,6 +39,7 @@ public class novaEmpresaServlet extends HttpServlet {
 		Banco banco = new Banco();
 		banco.adiciona(empresa);
 		System.out.println("Nova empresa cadastrada");
+		System.out.println(empresa.getId());
 		
 		response.sendRedirect("listaEmpresas");
 		
