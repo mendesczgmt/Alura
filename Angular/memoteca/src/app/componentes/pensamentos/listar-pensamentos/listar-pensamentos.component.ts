@@ -7,7 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarPensamentosComponent implements OnInit {
 
-  listaPensamentos = [];
+  listaPensamentos = [
+    {
+      conteudo: 'Comunicação entre componentes',
+      autoria: 'Angular',
+      modelo: 'modelo3'
+    },
+
+    {
+      conteudo: 'Estudando Angular',
+      autoria: 'Alura',
+      modelo: 'modelo2'
+    }, 
+    {
+      conteudo: 'Estdasdasasdsadsadasdsdasdsadsdasdasdasdasdasdasdasdsadasdwqdefewfwefegrgwrfrekjgbjsfbashfbisdahfbsdahlbfdhbshadbfhsadbfbsdhfioasbhfdsandshabdashudbsahuddasdasdasdssadasdasudando Angular',
+      autoria: 'gabryel',
+      modelo: 'modelo1'
+    } 
+  ];
 
   constructor() { }
 
